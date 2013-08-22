@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1377121425 source:c:\users\falleh\workspace\superplatformbros\src\main.cpp
+1377203709 source:c:\users\falleh\workspace\superplatformbros\src\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"blob.h"
 	"InputHandler.h"
+	"Hero.h"
+	"DrawHandler.h"
 
 1365233434 c:\nyttigt\sfml-2.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -339,7 +341,7 @@
 	<string>
 	<vector>
 
-1377118798 source:c:\users\falleh\workspace\superplatformbros\src\blob.cpp
+1377169799 source:c:\users\falleh\workspace\superplatformbros\src\blob.cpp
 	"blob.h"
 
 1367997280 c:\nyttigt\sfml-2.1\include\sfml\graphics.hpp
@@ -678,12 +680,31 @@
 
 1373308179 c:\users\falleh\workspace\superplatformbros\src\blob.cpp
 
-1377098195 c:\users\falleh\workspace\superplatformbros\include\blob.h
+1377169798 c:\users\falleh\workspace\superplatformbros\include\blob.h
 
-1377168931 source:c:\users\falleh\workspace\superplatformbros\src\inputhandler.cpp
+1377201625 source:c:\users\falleh\workspace\superplatformbros\src\inputhandler.cpp
 	"InputHandler.h"
-	<SFML/Window.hpp>
 
-1377119487 c:\users\falleh\workspace\superplatformbros\include\inputhandler.h
+1377186756 c:\users\falleh\workspace\superplatformbros\include\inputhandler.h
 	"blob.h"
+	<SFML/Window.hpp>
+	"Hero.h"
+
+1377201296 source:c:\users\falleh\workspace\superplatformbros\src\actor.cpp
+	"Actor.h"
+
+1377201978 c:\users\falleh\workspace\superplatformbros\include\actor.h
+
+1377201990 source:c:\users\falleh\workspace\superplatformbros\src\hero.cpp
+	"Hero.h"
+
+1377201328 c:\users\falleh\workspace\superplatformbros\include\hero.h
+	<Actor.h>
+
+1377203632 source:c:\users\falleh\workspace\superplatformbros\src\drawhandler.cpp
+	"DrawHandler.h"
+
+1377204004 c:\users\falleh\workspace\superplatformbros\include\drawhandler.h
+	<SFML/Graphics.hpp>
+	<vector>
 

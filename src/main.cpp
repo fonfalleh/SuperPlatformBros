@@ -2,58 +2,56 @@
 #include <iostream>
 #include "blob.h"
 #include "InputHandler.h"
-
+#include "Hero.h"
+#include "DrawHandler.h"
 int main()
 {
-    //using blob::blob;
+    const int HEIGHT = 600;
+    const int WIDTH = 800;
     sf::CircleShape shape(32.f);
-    blob * bp = new blob(0, 0);
+    Hero* hero = new Hero();
 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
-    //shape.setOrigin(-100.0, -100.0);
-    //shape.setOrigin(bp->getX(), bp->getY());
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Super Platform Bros!");
+    sf::RenderWindow* wp = &window;
+    DrawHandler* drawer = new DrawHandler(wp);
     shape.setFillColor(sf::Color::Green);
+    drawer->addToDraw(&shape);
 
     // Starting the game clock
+
     sf::Clock* timer = new sf::Clock();
+    sf::Time step = sf::seconds(1) / 60.0f; //60 fps
     sf::Time elapsed;
     while (window.isOpen())
     {
-        elapsed = timer->restart();
-        /**
-            sf::Clock* timer = new sf::Clock();
-    const int TIMESTEP = 20;//1000 / 60;
-    int time = 0;
-    sf::Time elapsed = timer->getElapsedTime();
-    while (window.isOpen())
-    {
-        elapsed = timer->restart();
-        time += elapsed.asMilliseconds();
-        if(time < TIMESTEP)
+        elapsed += timer->restart();
+        if(elapsed < step)
             continue;
 
-        time -= TIMESTEP;
-        */
+        elapsed -= step;
 
         // Experimental updating
-        InputHandler::update(*bp, elapsed.asMicroseconds());
-        shape.setPosition(bp->getX(), bp->getY());
+        InputHandler::update(hero);
 
+
+        //TODO:
         // Handle input
         // Handle updates
         // Handle drawing (and updates)
         // Drawing should be done by "camera" or drawing-manager
 
+        shape.setPosition(hero->getX(), HEIGHT/2  - hero->getY());
+
+        drawer->drawThings();
+
+
+        // Old magic that makes stuff work.
         sf::Event event;
         while (window.pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        window.clear();
-        window.draw(shape);
-        window.display();
     }
-
     return 0;
 }

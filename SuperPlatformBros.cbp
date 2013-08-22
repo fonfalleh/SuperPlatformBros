@@ -44,9 +44,15 @@
 		<Linker>
 			<Add directory="C:/Nyttigt/SFML-2.1/lib" />
 		</Linker>
+		<Unit filename="include/Actor.h" />
+		<Unit filename="include/DrawHandler.h" />
+		<Unit filename="include/Hero.h" />
 		<Unit filename="include/InputHandler.h" />
 		<Unit filename="include/blob.h" />
 		<Unit filename="include/main.h" />
+		<Unit filename="src/Actor.cpp" />
+		<Unit filename="src/DrawHandler.cpp" />
+		<Unit filename="src/Hero.cpp" />
 		<Unit filename="src/InputHandler.cpp" />
 		<Unit filename="src/blob.cpp" />
 		<Unit filename="src/main.cpp" />

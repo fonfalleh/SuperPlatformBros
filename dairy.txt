@@ -1,0 +1,28 @@
+stoffs to be done!
+
+world representation.
+
+when on ground, can jump.
+when in air, can jump IF not falling
+will start falling sometime.
+
+controls
+hero interaction
+gravity
+collisions
+
+
+generic class for movement - actor?
+
+
+
+22/8
+Vill nog byta tillbaka till fixed step loop, för att utgå ifrån frames i logiken. Avrundningsfel vid uppdateringar lär vara försumbara.
+Ändrat storlek på sprites och lagt till referens-grid.
+Leker med UML!
+Fixat stabil timeloop (fel pga avrundning, använder sf::Time nu, 60 fps)
+
+
+21/8
+Testade fixed step och delta time update loops. Ingen verkade speciellt stabil, men det kan bero på drawing...
+Fixat med headers.

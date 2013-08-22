@@ -1,23 +1,18 @@
 #include "InputHandler.h"
-#include <SFML/Window.hpp>
 
-void InputHandler::update(blob& dude, int elapsedTime)
+void InputHandler::update(Hero* hero)
 {
-    float dist = 400 / elapsedTime;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+    {
+        hero->jump();
+    }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     {
-        dude.update(-dist, 0);
+        hero->run(-0.7);
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
     {
-        dude.update(dist, 0);
+        hero->run(0.7);
     }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-    {
-        dude.update(0, -dist);
-    }
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-    {
-        dude.update(0, dist);
-    }
+    hero->update(); //TODO WRONG
 }
