@@ -4,6 +4,8 @@
 #include "InputHandler.h"
 #include "Hero.h"
 #include "DrawHandler.h"
+#include "Stage.h"
+
 int main()
 {
     const int HEIGHT = 600;
@@ -11,11 +13,17 @@ int main()
     sf::CircleShape shape(32.f);
     Hero* hero = new Hero();
 
+    // Some world init
+    Stage* stage = new Stage();
+
+    // Some graphical init
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Super Platform Bros!");
     sf::RenderWindow* wp = &window;
-    DrawHandler* drawer = new DrawHandler(wp);
+    DrawHandler* drawer = new DrawHandler(wp, &(stage->getBlocks()));
     shape.setFillColor(sf::Color::Green);
     drawer->addToDraw(&shape);
+
+
 
     // Starting the game clock
 

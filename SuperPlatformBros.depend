@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1377203709 source:c:\users\falleh\workspace\superplatformbros\src\main.cpp
+1377901761 source:c:\users\falleh\workspace\superplatformbros\src\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"blob.h"
 	"InputHandler.h"
 	"Hero.h"
 	"DrawHandler.h"
+	"Stage.h"
 
 1365233434 c:\nyttigt\sfml-2.0\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -695,16 +696,30 @@
 
 1377201978 c:\users\falleh\workspace\superplatformbros\include\actor.h
 
-1377201990 source:c:\users\falleh\workspace\superplatformbros\src\hero.cpp
+1377266870 source:c:\users\falleh\workspace\superplatformbros\src\hero.cpp
 	"Hero.h"
 
 1377201328 c:\users\falleh\workspace\superplatformbros\include\hero.h
 	<Actor.h>
 
-1377203632 source:c:\users\falleh\workspace\superplatformbros\src\drawhandler.cpp
+1377268934 source:c:\users\falleh\workspace\superplatformbros\src\drawhandler.cpp
 	"DrawHandler.h"
 
-1377204004 c:\users\falleh\workspace\superplatformbros\include\drawhandler.h
+1377902128 c:\users\falleh\workspace\superplatformbros\include\drawhandler.h
 	<SFML/Graphics.hpp>
 	<vector>
+	"Block.h"
+
+1377900774 source:c:\users\falleh\workspace\superplatformbros\src\block.cpp
+	"Block.h"
+
+1377900728 c:\users\falleh\workspace\superplatformbros\include\block.h
+	<SFML/System.hpp>
+
+1377901396 source:c:\users\falleh\workspace\superplatformbros\src\stage.cpp
+	"Stage.h"
+
+1377901388 c:\users\falleh\workspace\superplatformbros\include\stage.h
+	<vector>
+	"Block.h"
 

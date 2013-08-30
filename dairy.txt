@@ -2,10 +2,6 @@ stoffs to be done!
 
 world representation.
 
-when on ground, can jump.
-when in air, can jump IF not falling
-will start falling sometime.
-
 controls
 hero interaction
 gravity
@@ -14,13 +10,23 @@ collisions
 
 generic class for movement - actor?
 
+30/8
+Måste slänga in någon form av värld med någon form av representation av saker.
+Slänger upp Stage och Block, båda är testklasser. För att underlätta skapandet av banor så behövs något sätt att läsa in banor utan att behöva hårdkoda allt i stage...
 
+Lyckades ordna så att man kan måla upp en bana utifrån ett Stage-objekt med Block-objekt i.
+
+Kvar är bland annat att lägga in blocken i logiken, samt collision detection.
+Collisions kan kanske skötas via http://sfml-dev.org/documentation/2.1/classsf_1_1Rect.php
 
 22/8
 Vill nog byta tillbaka till fixed step loop, för att utgå ifrån frames i logiken. Avrundningsfel vid uppdateringar lär vara försumbara.
 Ändrat storlek på sprites och lagt till referens-grid.
 Leker med UML!
 Fixat stabil timeloop (fel pga avrundning, använder sf::Time nu, 60 fps)
+Lagt till mer styrning samt börjat jobba på accelerationer.
+Lagt till en DrawHandler som målar saker.
+
 
 
 21/8
