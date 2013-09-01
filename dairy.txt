@@ -10,6 +10,13 @@ collisions
 
 generic class for movement - actor?
 
+31/8
+Collision detection - läser på lite, men inte för mycket.
+Verkar vara lättast att jämföra collisions mellan rektanglar, men man får avgränsa vilka områden man söker i för att spara uträkningar?
+
+Skall nog inte använda MVC trots allt.
+Struktur behövs för GameObjects...
+
 30/8
 Måste slänga in någon form av värld med någon form av representation av saker.
 Slänger upp Stage och Block, båda är testklasser. För att underlätta skapandet av banor så behövs något sätt att läsa in banor utan att behöva hårdkoda allt i stage...
