@@ -723,3 +723,68 @@
 	<vector>
 	"Block.h"
 
+1381088720 source:/home/falleh/workspace/SuperPlatformBros/src/Actor.cpp
+	"Actor.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/Actor.h
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/blob.cpp
+	"blob.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/blob.h
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/Block.cpp
+	"Block.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/Block.h
+	<SFML/System.hpp>
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/DrawHandler.cpp
+	"DrawHandler.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/DrawHandler.h
+	<SFML/Graphics.hpp>
+	<vector>
+	"Block.h"
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/GameObject.cpp
+	"GameObject.h"
+
+1381088742 /home/falleh/workspace/SuperPlatformBros/include/GameObject.h
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/Hero.cpp
+	"Hero.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/Hero.h
+	<Actor.h>
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/InputHandler.cpp
+	"InputHandler.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/InputHandler.h
+	"blob.h"
+	<SFML/Window.hpp>
+	"Hero.h"
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	"blob.h"
+	"InputHandler.h"
+	"Hero.h"
+	"DrawHandler.h"
+	"Stage.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/Stage.h
+	<vector>
+	"Block.h"
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/Scene.cpp
+	"Scene.h"
+
+1379276472 /home/falleh/workspace/SuperPlatformBros/include/Scene.h
+	"GameObject.h"
+
+1379276472 source:/home/falleh/workspace/SuperPlatformBros/src/Stage.cpp
+	"Stage.h"
+

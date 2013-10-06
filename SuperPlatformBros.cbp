@@ -15,9 +15,9 @@
 					<Add option="-g" />
 				</Compiler>
 				<Linker>
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-graphics-d.a" />
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-window-d.a" />
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-system-d.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-graphics-d.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-window-d.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-system-d.a" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -30,19 +30,18 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-graphics.a" />
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-window.a" />
-					<Add library="C:\Nyttigt\SFML-2.1\lib\libsfml-system.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-graphics.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-window.a" />
+					<Add library="C:/Nyttigt/SFML-2.1/lib/libsfml-system.a" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="C:/Nyttigt/SFML-2.1/include" />
-			<Add directory="C:/Users/Falleh/workspace/SuperPlatformBros/include" />
+			<Add directory="/usr/local/include/SFML" />
 		</Compiler>
 		<Linker>
-			<Add directory="C:/Nyttigt/SFML-2.1/lib" />
+			<Add directory="/usr/local/lib" />
 		</Linker>
 		<Unit filename="include/Actor.h" />
 		<Unit filename="include/Block.h" />

@@ -4,13 +4,13 @@ DrawHandler::DrawHandler(sf::RenderWindow* target, std::vector<Block>* bs)
 {
     screen = target;
     drawables.clear();
-    if (!background.loadFromFile("sprites\\background.png"))
+    if (!background.loadFromFile("sprites/background.png"))
     {
         background.create(200, 200);
     }
     bgSprite.setTexture(background);
 
-    if (!spritesheet.loadFromFile("sprites\\kenney_32x32.png"))
+    if (!spritesheet.loadFromFile("sprites/kenney_32x32.png"))
     {
         spritesheet.create(200, 200);
     }
@@ -32,7 +32,7 @@ DrawHandler::~DrawHandler()
 void DrawHandler::drawThings()
 {
     screen->clear();
-    //screen->draw(bgSprite);
+    screen->draw(bgSprite);
     screen->draw(*(drawables[0]));
     for (std::vector<Block>::iterator it = blocks->begin() ; it != blocks->end(); ++it)
     {

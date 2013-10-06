@@ -7,7 +7,7 @@ class GameObject
     public:
         GameObject();
         virtual ~GameObject();
-        virtual update();
+        //virtual update();
     protected:
     private:
 };
